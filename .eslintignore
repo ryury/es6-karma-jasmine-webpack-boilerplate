@@ -1,0 +1,7 @@
+dist/*
+node_modules/*
+**/node_modules/*
+tools/**/*
+src/polyfill/*
+test/*
+karma.conf.js

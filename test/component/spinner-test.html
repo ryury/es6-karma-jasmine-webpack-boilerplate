@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>&#127895;</title>
+    <style>
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 45px;
+            bottom: 48px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none; margin:0;}
+        .button-group {margin-top:30px;}
+    </style>
+</head>
+<body>
+<div id="header">Spinner</div>
+<div id="wrapper">
+    <h3>Input</h3>
+    <div class="input_w">
+        <input type="number" data-spinner="input" />
+    </div>
+    <div class="button-group">
+        <button class="modal-button" data-spinner-action="minus">minus</button>
+        <button class="modal-button" data-spinner-action="plus">plus</button>
+        <button class="modal-button" data-spinner-action="setValue">setValue</button>
+        <button class="modal-button">getValue</button>
+    </div>
+</div>
+
+
+<div id="wrapper2">
+    <h3>Input</h3>
+    <div class="input_w">
+        <span data-spinner="input"></span>
+    </div>
+    <div class="button-group">
+        <button class="modal-button" data-spinner-action="minus">minus</button>
+        <button class="modal-button" data-spinner-action="plus">plus</button>
+        <button class="modal-button">getValue</button>
+    </div>
+</div>
+
+<div id="wrapper3">
+    <h3>Input</h3>
+    <div class="input_w">
+        <input type="text" data-spinner="input" />
+    </div>
+    <div class="button-group">
+        <button class="modal-button" data-spinner-action="minus">minus</button>
+        <button class="modal-button" data-spinner-action="plus">plus</button>
+        <button class="modal-button">getValue</button>
+    </div>
+</div>
+
+</body>
+</html>

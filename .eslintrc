@@ -1,0 +1,98 @@
+{
+    "extends": "airbnb/base",
+    "env": {
+        "browser": true,
+        "amd": true,
+        "commonjs": true,
+        "node": true,
+        "jasmine": true,
+        "jquery": true
+    },
+    "rules": {
+        "import/prefer-default-export": 0,
+        // Possible Errors
+        "comma-dangle": "error",
+        "no-extra-parens": [
+            "error",
+            "functions"
+        ],
+        "no-prototype-builtins": "warn",
+        "no-negated-in-lhs": "error",
+        "valid-jsdoc": "off",
+        // Best Practices
+        "curly": "error",
+        "no-alert": "off",
+        "no-new": "off",
+        // Stylistic
+        "block-spacing": [
+            "off",
+            "never"
+        ],
+        "consistent-this": "error",
+        "func-names": "off",
+        "indent": [
+            "error",
+            4,
+            {
+                SwitchCase: 1,
+                VariableDeclarator: 1,
+                outerIIFEBody: 1,
+                FunctionDeclaration: {
+                    parameters: 1,
+                    body: 1
+                },
+                FunctionExpression: {
+                    parameters: 1,
+                    body: 1
+                }
+            }
+        ],
+        "linebreak-style": "off",
+        "max-depth": [
+            "error",
+            6
+        ],
+        "max-len": [
+            "error",
+            150,
+            4,
+            {
+                //URL을 포함한 라인은 무시
+                ignoreUrls: true,
+                //각행의 주석을 무시
+                ignoreComments: false,
+                //정규표현을 포함하면 무시
+                ignoreRegExpLiterals: true,
+                // 따옴표가 포함된 문자열은 무시
+                ignoreStrings: true,
+                // 템플릿 리터럴을 포함하면 무시
+                ignoreTemplateLiterals: true
+            }
+        ],
+        "max-lines": "off",
+        "no-plusplus": [
+            "off",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-restricted-syntax": [
+            "off",
+            "WithStatement"
+        ],
+        "no-underscore-dangle": "off",
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                anonymous: 'never',
+                named: 'never',
+                asyncArrow: 'never'
+            }
+        ],
+        "spaced-comment": "off"
+    }
+}
